@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opusnix | Modern Digital Experiences</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta name="description"
+    content="Opusnix provides high-end web development, UI/UX design, and total digital experiences for growing startups and businesses.">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+
+  <!-- Phosphor Icons (replaces Lucide/React Icons) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>💡 New Feature: Professional Portfolio Creations now available!</span>
+    <a href="announcements.html">Learn More →</a>
+  </div>
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Opusnix Logo">
+        <span class="text-gradient">Opusnix</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="hamburger">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="section-hero reveal" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Building Modern Digital Experiences for <span class="text-gradient">Businesses</span></h1>
+        <p>We craft scalable, reliable, and premium digital solutions that help startups drive growth and leave a
+          lasting impression.</p>
+        <div class="hero-btns delay-200 reveal">
+          <a href="#contact" class="btn btn-primary">
+            Get Started <i class="ph ph-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            View Our Work
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="glass-card reveal" style="padding: 3rem;">
+        <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+          <div>
+            <h2 style="font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: 1rem;">About <span
+                class="text-gradient">Opusnix</span></h2>
+            <p class="text-muted" style="margin-bottom: 1rem; line-height: 1.8;">Founded in 2026, Opusnix started out of
+              a shared frustration with the clunky, outdated digital platforms many startups were forced to use. We
+              provide modern, affordable, and scalable digital solutions.</p>
+            <p class="text-muted" style="margin-bottom: 2rem; line-height: 1.8;">Today, we're a fully distributed team
+              of passionate designers, engineers, and product strategists working to elevate brands globally.</p>
+            <a href="#services" class="btn btn-primary">
+              See Our Services <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+          <div style="border-radius: 12px; overflow: hidden; height: 100%; border: 1px solid var(--border-light);">
+            <img src="images/about-hero.png" alt="Opusnix Team Working"
+              style="width: 100%; height: 100%; object-fit: cover; min-height: 400px; display: block;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's New Section (Announcements) -->
+  <section class="section" id="whats-new" style="background: rgba(11,50,89,0.03); padding: 4rem 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>What's New?</h2>
+        <p>Stay updated with our latest moves and digital breakthroughs.</p>
+      </div>
+
+      <div class="news-carousel reveal delay-100">
+        <div class="news-slides" id="newsSlides">
+          <!-- Slide 1 -->
+          <div class="news-slide">
+            <div class="news-image">
+              <img src="images/announcement-hero.png" alt="New Announcement">
+            </div>
+            <div class="news-content">
+              <span class="news-badge">Update</span>
+              <h3>Announcement System Active</h3>
+              <p class="text-muted" style="margin-bottom: 2rem;">We've launched our official announcement system to keep
+                our clients and partners informed about every milestone at Opusnix.</p>
+              <a href="announcements.html" class="btn btn-outline">Read Full Story</a>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="news-slide">
+            <div class="news-image">
+              <img src="images/storefront-hero.png" alt="Project Update">
+            </div>
+            <div class="news-content">
+              <span class="news-badge">Service</span>
+              <h3>Portfolio Creation Services</h3>
+              <p class="text-muted" style="margin-bottom: 2rem;">Showcase your professional identity with our high-end,
+                custom-built portfolio websites designed for growth.</p>
+              <a href="#contact" class="btn btn-outline">Inquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Controls -->
+        <div class="slide-control">
+          <button class="btn-slide" id="prevSlide"><i class="ph ph-caret-left"></i></button>
+          <button class="btn-slide" id="nextSlide"><i class="ph ph-caret-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Our Core Services</h2>
+        <p>Premium solutions engineered for your exact business needs.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Service 1 -->
+        <div class="glass-card reveal delay-100">
+          <div class="service-icon">
+            <i class="ph ph-browsers"></i>
+          </div>
+          <h3>Website Development</h3>
+          <p class="text-muted">High-performance responsive websites tailored to your brand identity.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="glass-card reveal delay-200">
+          <div class="service-icon">
+            <i class="ph ph-paint-brush-broad"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p class="text-muted">Intuitive, user-centered digital interfaces that boost conversions.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="glass-card reveal delay-300">
+          <div class="service-icon">
+            <i class="ph ph-shopping-cart"></i>
+          </div>
+          <h3>E-commerce</h3>
+          <p class="text-muted">Scalable online storefronts handling payments, inventory, and analytics.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="glass-card reveal delay-100">
+          <div class="service-icon">
+            <i class="ph ph-wrench"></i>
+          </div>
+          <h3>Website Maintenance</h3>
+          <p class="text-muted">Regular updates, bug fixes, and performance monitoring to keep your website running
+            flawlessly.</p>
+        </div>
+        <!-- Service 5 -->
+        <div class="glass-card reveal delay-200">
+          <div class="service-icon">
+            <i class="ph ph-cloud"></i>
+          </div>
+          <h3>Hosting & Domain Setup</h3>
+          <p class="text-muted">Fast, secure hosting solutions and complete domain configuration for your online
+            presence.</p>
+        </div>
+        <!-- Service 6 -->
+        <div class="glass-card reveal delay-300">
+          <div class="service-icon">
+            <i class="ph ph-folder-open"></i>
+          </div>
+          <h3>Portfolio Creation</h3>
+          <p class="text-muted">Stunning, interactive portfolio sites designed to showcase your best work and win
+            clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section" id="why-choose-us">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Why Choose Us</h2>
+        <p>We blend modern technological standards with striking visual design.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="glass-card reveal delay-100"
+          style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2.5rem 1.5rem;">
+          <i class="ph ph-tag text-gradient" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+          <div>
+            <h3 style="font-size: 1.25rem;">Affordable Pricing</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">Enterprise-grade capabilities at startup-friendly budgets.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card reveal delay-200"
+          style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2.5rem 1.5rem;">
+          <i class="ph ph-codesandbox-logo text-gradient" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+          <div>
+            <h3 style="font-size: 1.25rem;">Modern Design</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">Following best practices pioneered by top tech companies
+              globally.</p>
+          </div>
+        </div>
+
+        <div class="glass-card reveal delay-300"
+          style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2.5rem 1.5rem;">
+          <i class="ph ph-rocket-launch text-gradient" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+          <div>
+            <h3 style="font-size: 1.25rem;">Fast Delivery</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">We respect deadlines and deploy rapid iterations safely.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card reveal delay-400"
+          style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; padding: 2.5rem 1.5rem;">
+          <i class="ph ph-lifebuoy text-gradient" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+          <div>
+            <h3 style="font-size: 1.25rem;">Dedicated Support</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">24/7 ongoing maintenance and security check ups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Portfolio -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Featured Work</h2>
+        <p>A glimpse into what we have launched recently.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <!-- Project 1 -->
+        <div class="glass-card project-card reveal delay-300">
+          <div class="project-img-wrapper">
+            <img src="images/fintech-hero.png" alt="Fintech Dashboard" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>Fintech Dashboard</h3>
+            <p class="text-muted" style="margin-bottom: 1.5rem;">A real-time financial tracking interface with complex
+              data visualizations.</p>
+            <a href="#" class="btn btn-outline" style="width: 100%;">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card reveal delay-200">
+          <div class="project-img-wrapper">
+            <img src="images/storefront-hero.png" alt="Minimalist Storefront" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>Minimalist Storefront</h3>
+            <p class="text-muted" style="margin-bottom: 1.5rem;">A high-conversion boutique storefront for premium
+              fashion goods.</p>
+            <a href="#" class="btn btn-outline" style="width: 100%;">View Project</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Meet Our Founders -->
+  <section class="section" id="founders">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Meet Our Founders</h2>
+        <p>Meet the passionate people behind Opusnix.</p>
+      </div>
+
+      <div class="grid grid-5">
+        <!-- Founder 1 -->
+        <div class="glass-card founder-card reveal delay-100">
+          <div class="founder-img">
+            <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: #ffffff;">
+              <img src="images/founder-1-final.png" alt="Dharshan V"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+            </div>
+          </div>
+          <h4>Dharshan V</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">CEO & Founder</p>
+        </div>
+        <!-- Founder 2 -->
+        <div class="glass-card founder-card reveal delay-200">
+          <div class="founder-img">
+            <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: #ffffff;">
+              <img src="images/founder-2-final.png" alt="Karthick S"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+            </div>
+          </div>
+          <h4>Karthick S</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">CEO & Founder</p>
+        </div>
+        <!-- Founder 3 -->
+        <div class="glass-card founder-card reveal delay-300">
+          <div class="founder-img">
+            <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: #ffffff;">
+              <img src="images/founder-5-final.jpeg" alt="Akshay S"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.35) translateY(-16%); transform-origin: center top;">
+            </div>
+          </div>
+          <h4>Akshay S</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">CEO & Founder</p>
+        </div>
+        <!-- Founder 4 -->
+        <div class="glass-card founder-card reveal delay-400">
+          <div class="founder-img">
+            <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: #ffffff;">
+              <img src="images/founder-3-final.png" alt="Balachandar R"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+            </div>
+          </div>
+          <h4>Balachandar R</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">CEO & Founder</p>
+        </div>
+        <!-- Founder 5 -->
+        <div class="glass-card founder-card reveal" style="transition-delay: 500ms;">
+          <div class="founder-img">
+            <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background-color: #ffffff;">
+              <img src="images/founder-4-final.png" alt="Ashwin M"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.1) translateY(-5%); transform-origin: center top;">
+            </div>
+          </div>
+          <h4>Ashwin M</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">CEO & Founder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>What Clients Say</h2>
+        <p>Trusted by forward-thinking companies around the world.</p>
+      </div>
+
+      <div class="testimonials-grid reveal delay-200">
+        <!-- Testimonial 1 -->
+        <div class="glass-card testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Opusnix transformed our aging infrastructure into a sleek, performant application. Truly unmatched
+            attention to detail and professional delivery timelines."</p>
+          <div class="client-info">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: rgba(226,232,240,0.8); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-user text-muted"></i>
+            </div>
+            <div>
+              <h4 style="margin:0; font-size: 1rem;">Sarah Jenkins</h4>
+              <p class="text-muted" style="font-size: 0.8rem;">CEO, NextGen Corp</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline"
+            style="margin-top: 1.5rem; width: 100%; font-size: 0.9rem; padding: 0.5rem;">View Product</a>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="glass-card testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The UI/UX revamp increased our conversion rates by 40%. The team at Opusnix really understands modern user
+            behavior and aesthetics perfectly."</p>
+          <div class="client-info">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: rgba(226,232,240,0.8); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-user text-muted"></i>
+            </div>
+            <div>
+              <h4 style="margin:0; font-size: 1rem;">Michael Rodriguez</h4>
+              <p class="text-muted" style="font-size: 0.8rem;">Product Manager, FinTech Inc</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline"
+            style="margin-top: 1.5rem; width: 100%; font-size: 0.9rem; padding: 0.5rem;">View Product</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom: 3rem;">
+        <h2>Let's Connect</h2>
+        <p>Whether you have a full business plan or just a rough idea written on a napkin, we'd love to hear from you.
+        </p>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem;">
+
+        <!-- Contact Info Side -->
+        <div class="reveal delay-100">
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 12px; background: rgba(11, 50, 89, 0.08); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-envelope text-primary" style="font-size: 1.5rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">Email Us</h4>
+              <p class="text-muted"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=opusnix@gmail.com"
+                  target="_blank" style="color: inherit; text-decoration: none;">opusnix@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 12px; background: rgba(11, 50, 89, 0.08); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-map-pin text-primary" style="font-size: 1.5rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">HQ Address</h4>
+              <p class="text-muted">Hosur<br>Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 12px; background: rgba(11, 50, 89, 0.08); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-phone text-primary" style="font-size: 1.5rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">Phone</h4>
+              <p class="text-muted">+91 9597461196</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="glass-card reveal delay-200">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key will go here -->
+            <input type="hidden" name="access_key" value="355ceb66-0b9f-4be0-beb3-26dba0f07d7c">
+
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="Name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="Email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="Phone" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="Subject" class="form-control" placeholder="Project Inquiry">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="Message" class="form-control"
+                placeholder="Tell us about what you want to build..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="ph ph-paper-plane-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer reveal delay-100">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex; align-items: center;">
+            <img src="images/logo.png" alt="Opusnix Logo">
+            <span class="text-gradient">Opusnix</span>
+          </a>
+          <p class="text-muted" style="max-width: 300px;">To provide modern, affordable, and scalable digital solutions
+            for startups and businesses globally.</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/opus-nix-66596a3ba?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://www.instagram.com/opus_nix?utm_source=qr&igsh=NDQydGFrN2Zxcmxl" target="_blank"
+              rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://youtube.com/@opusnix?si=trMyi1RXcZXhzAtH" target="_blank" rel="noopener noreferrer"><i
+                class="ph ph-youtube-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li class="text-muted"><i class="ph ph-envelope"></i> <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=opusnix@gmail.com" target="_blank"
+                style="color: var(--primary); text-decoration: none; cursor: pointer;">opusnix@gmail.com</a></li>
+            <li class="text-muted"><i class="ph ph-phone"></i> +91 9597461196</li>
+            <li class="text-muted"><i class="ph ph-map-pin"></i> Hosur, Tamil Nadu, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Opusnix. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    if (phoneInputField) {
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        preferredCountries: ["us", "in", "gb"],
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Opusnix</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <!-- Blob Background Effects -->
+
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Opusnix Logo">
+        <span class="text-gradient">Opusnix</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <button class="hamburger">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="section-hero reveal" style="min-height: 40vh; padding-bottom: 2rem;">
+    <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto; padding-top: 5rem;">
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4rem);">Let's <span class="text-gradient">Connect</span></h1>
+      <p class="text-muted" style="font-size: 1.125rem;">Reach out to us to schedule a meeting and discuss how we can
+        build your future.</p>
+    </div>
+  </header>
+
+  <!-- Contact Form & Info -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem;">
+
+        <!-- Contact Info Side -->
+        <div class="reveal delay-100">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Get in touch</h2>
+          <p class="text-muted" style="margin-bottom: 3rem;">Whether you have a full business plan or just a rough idea
+            written on a napkin, we'd love to hear from you. Fill out the form or use our direct contact info below.</p>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 12px; background: rgba(11, 50, 89, 0.08); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-envelope text-primary" style="font-size: 1.5rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">Email Us</h4>
+              <p class="text-muted">opusnix@gmail.com</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 12px; background: rgba(11, 50, 89, 0.08); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-map-pin text-primary" style="font-size: 1.5rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">HQ Address</h4>
+              <p class="text-muted">Hosur<br>Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 12px; background: rgba(11, 50, 89, 0.08); display: flex; align-items: center; justify-content: center;">
+              <i class="ph ph-phone text-primary" style="font-size: 1.5rem;"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">Phone</h4>
+              <p class="text-muted">+91 9597461196</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="glass-card reveal delay-200">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key will go here -->
+            <input type="hidden" name="access_key" value="355ceb66-0b9f-4be0-beb3-26dba0f07d7c">
+
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="Name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="Email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="Phone" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="Subject" class="form-control" placeholder="Project Inquiry">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="Message" class="form-control"
+                placeholder="Tell us about what you want to build..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="ph ph-paper-plane-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dummy Map Canvas -->
+  <section class="section reveal" style="padding-top: 0;">
+    <div class="container">
+      <div
+        style="width: 100%; height: 400px; background: rgba(241,245,249,0.5); border: 1px solid var(--glass-border); border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <i class="ph ph-map-trifold" style="font-size: 4rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+        <p class="text-muted">Interactive Map Placeholder</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer reveal delay-100">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex; align-items: center;">
+                    <img src="images/logo.png" alt="Opusnix Logo">
+            <span style="color:var(--text-main);">Opusnix</span>
+          </a>
+          <p class="text-muted" style="max-width: 300px;">To provide modern, affordable, and scalable digital solutions
+            for startups and businesses globally.</p>
+          <div class="social-icons">
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-github-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li class="text-muted"><i class="ph ph-envelope"></i> opusnix@gmail.com</li>
+            <li class="text-muted"><i class="ph ph-phone"></i> +91 9597461196</li>
+            <li class="text-muted"><i class="ph ph-map-pin"></i> Hosur, Krishnagiri, Tamil Nadu, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Opusnix. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      preferredCountries: ["us", "in", "gb"],
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+</body>
+
+</html>
