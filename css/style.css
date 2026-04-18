@@ -527,23 +527,6 @@ img {
   scroll-snap-type: x mandatory;
 }
 
-.testimonials-grid::-webkit-scrollbar {
-  height: 8px;
-}
-
-.testimonials-grid::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.04);
-  border-radius: 4px;
-}
-
-.testimonials-grid::-webkit-scrollbar-thumb {
-  background: var(--border-light);
-  border-radius: 4px;
-}
-
-.testimonials-grid::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
-}
 
 .testimonial-card {
   width: 380px;
