@@ -746,41 +746,6 @@ textarea.form-control {
   font-size: 0.875rem;
 }
 
-/* Announcement System */
-.announcement-bar {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  color: #fff;
-  padding: 0.6rem 1.5rem;
-  text-align: center;
-  font-size: clamp(0.7rem, 2.5vw, 0.8125rem);
-  font-weight: 500;
-  position: relative;
-  z-index: 1001;
-  line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-.announcement-bar span {
-  display: inline-block;
-}
-
-.announcement-bar a {
-  color: #fff;
-  text-decoration: underline;
-  margin-left: 0.5rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-@media (max-width: 480px) {
-  .announcement-bar {
-    font-size: 0.75rem;
-  }
-}
 
 .news-carousel {
   position: relative;
