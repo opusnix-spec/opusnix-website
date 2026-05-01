@@ -81,7 +81,48 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // Contact form submission logic removed, using native FormSubmit natively now.
+  // --- Contact Form Submission ---
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="ph ph-spinner-gap"></i> Sending...';
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          alert("Thanks for contacting us! Our team will contact you soon.");
+          contactForm.reset();
+        } else {
+          console.log(response);
+          alert("Something went wrong. Please try again.");
+        }
+      })
+      .catch(error => {
+        console.log(error);
+        alert("Something went wrong. Please try again.");
+      })
+      .then(function() {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      });
+    });
+  }
 
 
   // --- News Carousel Logic ---
