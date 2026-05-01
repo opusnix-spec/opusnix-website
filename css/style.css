@@ -467,10 +467,11 @@ img {
   object-fit: cover;
   border-bottom: 1px solid var(--border-light);
   transition: transform var(--transition-smooth);
+  transform: scale(1.1); /* Added default zoom */
 }
 
 .project-card:hover .project-img {
-  transform: scale(1.08);
+  transform: scale(1.18); /* Increased hover zoom */
 }
 
 .project-info {
