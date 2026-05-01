@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="ph ph-spinner-gap"></i> Sending...';
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch('https://formsubmit.co/ajax/opusnix@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
